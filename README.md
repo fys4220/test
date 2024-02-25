@@ -1,3 +1,4 @@
+```html
 <body>
   <pre class="mermaid">
     flowchart LR
@@ -22,3 +23,4 @@
     mermaid.initialize(config);
   </script>
 </body>
+```html
