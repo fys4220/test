@@ -1,29 +1,24 @@
-# test
+<body>
+  <pre class="mermaid">
+    flowchart LR
+        A-->B
+        B-->C
+        C-->D
+        click A callback "Tooltip"
+        click B "https://www.github.com" "This is a link"
+        click C call callback() "Tooltip"
+        click D href "https://www.github.com" "This is a link"
+  </pre>
 
-
-```mermaid
-timeline
-    title History of Social Media Platform
-    August : Introduction
-    September : Exercies
-    November : test
-    December : Exam
-```
-
-```mermaid
-flowchart LR
-    A-->B
-    B-->C
-    C-->D
-    click A callback "Tooltip for a callback"
-    click B "https://www.github.com" "This is a tooltip for a link"
-    click C call callback() "Tooltip for a callback"
-    click D href "https://www.github.com" "This is a tooltip for a link"
-```
-
-
-<script>
-  const callback = function () {
-    alert('A callback was triggered');
-  };
-</script>
+  <script>
+    const callback = function () {
+      alert('A callback was triggered');
+    };
+    const config = {
+      startOnLoad: true,
+      flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'cardinal' },
+      securityLevel: 'loose',
+    };
+    mermaid.initialize(config);
+  </script>
+</body>
