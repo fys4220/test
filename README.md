@@ -23,4 +23,4 @@
     mermaid.initialize(config);
   </script>
 </body>
-```html
+```
