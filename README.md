@@ -1,26 +1,9 @@
-```html
-<body>
-  <pre class="mermaid">
-    flowchart LR
-        A-->B
-        B-->C
-        C-->D
-        click A callback "Tooltip"
-        click B "https://www.github.com" "This is a link"
-        click C call callback() "Tooltip"
-        click D href "https://www.github.com" "This is a link"
-  </pre>
+```mermaid
 
-  <script>
-    const callback = function () {
-      alert('A callback was triggered');
-    };
-    const config = {
-      startOnLoad: true,
-      flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'cardinal' },
-      securityLevel: 'loose',
-    };
-    mermaid.initialize(config);
-  </script>
-</body>
+
+graph TD; 
+  A(Start)-->B(Do some stuff); 
+  B(Take some rest)-->C(do more);
+  click B 'http://www.github.com' "This is a link"
+
 ```
