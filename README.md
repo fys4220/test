@@ -20,3 +20,10 @@ flowchart LR
     click C call callback() "Tooltip for a callback"
     click D href "https://www.github.com" "This is a tooltip for a link"
 ```
+
+
+<script>
+  const callback = function () {
+    alert('A callback was triggered');
+  };
+</script>
